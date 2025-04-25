@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { GifService } from 'src/app/gifs/services/gifs.service';
 
 interface MenuOption {
   icon: string;
@@ -15,7 +16,6 @@ interface MenuOption {
     RouterLinkActive,
   ],
   templateUrl: './side-menu-options.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SideMenuOptionsComponent {
 
@@ -32,6 +32,9 @@ export class SideMenuOptionsComponent {
       subLabel: 'Buscar gifs',
       route: '/dashboard/search'
     },
-  ]
+  ];
+  public gifService = inject(GifService);
+
+
 
 }
