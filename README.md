@@ -2,6 +2,9 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
 
+- ☁️ **Netlify:**  
+  [Netlify](https://gifs-app-2025.netlify.app) 
+
 ## Development server
 
 To start a local development server, run:
